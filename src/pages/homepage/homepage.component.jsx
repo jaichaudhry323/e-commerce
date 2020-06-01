@@ -1,73 +1,16 @@
 import React from 'react'
 import './homepage.styles.scss'
+import Directory from '../../components/directory/directory.component'
 
 // created a function
 
-const HomePage=()=>(
+const HomePage = () => (
 
-<div className='homepage'>
-    
-    <div className='directory-menu'>
-        <div className='menu-item'>
-            <div className='content'>
-                
-                <h1 className='title'>  HATS</h1>
+    <div className='homepage'>
 
-                <span className='subtitle'> SHOP NOW </span>
+        <Directory />
 
-            </div>
-        </div>
     </div>
-
-    <div className='directory'>
-        <div className='menu-item'>
-            <div className='content'>
-                
-                <h1 className='title'>  JACKETS</h1>
-
-                <span className='subtitle'> SHOP NOW </span>
-
-            </div>
-        </div>
-    </div>
-
-    <div className='directory'>
-        <div className='menu-item'>
-            <div className='content'>
-                
-                <h1 className='title'>  SNEAKERS</h1>
-
-                <span className='subtitle'> SHOP NOW </span>
-
-            </div>
-        </div>
-    </div>
-
-    <div className='directory'>
-        <div className='menu-item'>
-            <div className='content'>
-                
-                <h1 className='title'>  WOMENS</h1>
-
-                <span className='subtitle'> SHOP NOW </span>
-
-            </div>
-        </div>
-    </div>
-
-    <div className='directory'>
-        <div className='menu-item'>
-            <div className='content'>
-                
-                <h1 className='title'>  MENS</h1>
-
-                <span className='subtitle'> SHOP NOW </span>
-
-            </div>
-        </div>
-    </div>
-
-</div>
 
 )
 
