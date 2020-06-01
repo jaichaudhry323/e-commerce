@@ -12,7 +12,7 @@
     background-position: center;
     background-size    : cover; // we want image tocover the whole thing
 
-    overflow: hidden;              // so that the growing div doesnt grow , only seems to grow , doesnt expand over its given space
+    overflow: hidden; // so that the growing div doesnt grow , only seems to grow , doesnt expand over its given space
 
     &.large {
         // NOTE . was used to get nested class
@@ -23,12 +23,12 @@
         cursor: pointer;
 
         & .background-image {
-            transform : scale(1.1);                                               // increase size by 1.1                                         
-            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);        // a complicacted calculation which determines the speed of transform/transition
+            transform : scale(1.1); // increase size by 1.1                                         
+            transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95); // a complicacted calculation which determines the speed of transform/transition
         }
 
         & .content {
-            opacity: 0.9;                      
+            opacity: 0.9;
         }
     }
 
@@ -58,10 +58,10 @@
         justify-content: center;
         border         : 1px solid black;
 
-        background-color: white;        // so that image is 30% visible behind the white text space
+        background-color: white; // so that image is 30% visible behind the white text space
         opacity         : 0.7;
 
-        position: absolute;               // so that the content's position is determined only by its css values and its not affected by others 
+        position: absolute; // so that the content's position is determined only by its css values and its not affected by others 
 
         .title {
             font-weight  : bold;

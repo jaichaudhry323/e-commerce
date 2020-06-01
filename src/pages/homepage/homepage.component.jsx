@@ -4,14 +4,17 @@ import Directory from '../../components/directory/directory.component'
 
 // created a function
 
-const HomePage = () => (
+const HomePage = (props) => {
 
-    <div className='homepage'>
+    console.log(props);
 
-        <Directory />
+    return (
+        <div className='homepage'>
 
-    </div>
+            <Directory />
 
-)
+        </div>
+    );
+}
 
 export default HomePage;
