@@ -1,3 +1,12 @@
+body{
+  padding: 4%;
+}
+
+/* // since react renders <a> tag which is underlined by default so to remove that we do this below styling */
+a{
+  text-decoration: none;
+  color: black;
+}
 
 .App {
   text-align: center;
