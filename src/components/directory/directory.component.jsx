@@ -59,9 +59,14 @@ class Directory extends React.Component {
                     // ))
 
                     // ANOTHER WAY TO STOP USING THE section name again and again in our above map function
-                    this.state.sections.map(
-                        ({ title, imageUrl, id,size }) => (
-                            <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
+                    // this.state.sections.map(
+                    //     ({ title, imageUrl, id, size }) => (
+                    //         <MenuItem key={id} title={title} imageUrl={imageUrl} size={size} />
+                    //     ))
+
+                    // BETTER THAN BETTER
+                    this.state.sections.map(({id,...otherSectionProps }) => (
+                            <MenuItem key={id} {...otherSectionProps} />
                         ))
                 }
 

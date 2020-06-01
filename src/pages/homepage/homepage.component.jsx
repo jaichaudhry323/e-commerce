@@ -10,9 +10,7 @@ const HomePage = (props) => {
 
     return (
         <div className='homepage'>
-
-            <Directory />
-
+            <Directory/>
         </div>
     );
 }
