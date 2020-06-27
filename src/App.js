@@ -15,13 +15,13 @@ import SignInAndSignUpPage from './pages/sign-in-and-sign-out/sign-in-and-sign-o
 
 function App() {
   return (
-    <div> 
-      <Header/>
+    <div>
+      <Header />
 
-    <Switch>
-      <Route exact path='/' component={HomePage} />
-      <Route path='/shop' component={ShopPage} />
-      <Route path='/signin' component={SignInAndSignUpPage}/>
+      <Switch>
+        <Route exact path='/' component={HomePage} />
+        <Route path='/shop' component={ShopPage} />
+        <Route path='/signin' component={SignInAndSignUpPage} />
       </Switch>
 
     </div>
