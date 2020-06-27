@@ -3,6 +3,7 @@ import React from 'react'
 import './sign-in.styles.scss'
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
+import { signInWithGoogle } from '../../firebase/firebase.utils';
 
 class SignIn extends React.Component {
 
@@ -61,7 +62,17 @@ class SignIn extends React.Component {
                     />
 
                     {/* <input name='submit' type='submit' /> */}
-                    <CustomButton type='submit'>Sign In</CustomButton>
+
+                    <div className="buttons">
+                        <CustomButton type='submit'>Sign In</CustomButton>
+                    </div>
+                    <p>{'   '}</p>
+                    <div className="buttons">
+                        <CustomButton onClick={signInWithGoogle} isGoogleSignIn >  {/* isGoogleSignIn property gets passed with a value of TRUE is we dont assign any value to it  */}
+                        Sign In With Google
+                        </CustomButton>
+                    </div>
+
                 </form>
 
             </div>
